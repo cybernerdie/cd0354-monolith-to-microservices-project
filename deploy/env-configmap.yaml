@@ -1,0 +1,16 @@
+# Use config map for not-secret configuration data
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-configmap
+data:
+  APP_NAME: Udagram
+  APP_ENV: production
+  AWS_BUCKET: udagram-micro-spermy-dev
+  AWS_REGION: us-east-2
+  URL: http://localhost:8100
+  POSTGRES_DB: udagramsammydev
+  POSTGRES_HOST: database.cc8u8rzbf6ob.us-east-1.rds.amazonaws.com
+  AWS_PROFILE: default
+  JWT_SECRET: testing
